@@ -16,8 +16,9 @@ const Input = ({
         type={type}
         value={value}
         onChange={onChange}
+        className={errorPassword && "errorInput"}
       ></input>
-      {/* {errorPassword && <p>{errorPassword}</p>} */}
+      {errorPassword && <p className="error">{errorPassword}</p>}
     </div>
   );
 };

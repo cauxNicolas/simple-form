@@ -3,27 +3,133 @@
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 100%;
+  background-color: #e6e6e6;
 }
 
 .content {
   padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.content img {
+  width: 100%;
 }
 
 h1 {
   font-size: 2rem;
   font-weight: 500;
+  color: #4d7f9c;
 }
 
 .group {
-  margin: 20px 0px;
+  margin: 20px 0px 30px 0px;
   display: flex;
   flex-direction: column;
 }
 
-.group label {
+.formContent {
+  padding: 30px;
+  width: 70%;
+}
+
+form {
+  background-color: white;
+  display: flex;
+  width: 70%;
+}
+
+.rocket {
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/rocketForm.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+label {
+  font-size: 0.625rem;
+  font-weight: 800;
   margin-bottom: 10px;
 }
 
-.group input {
-  padding: 15px 20px;
+input {
+  font-size: 1rem;
+  outline: none;
+  border-style: none;
+  border-bottom: 1px solid #4d7f9c;
+  padding: 15px 5px 15px 5px;
+  background-color: #fafafa;
+}
+
+input::placeholder {
+  color: #4d7f9ca6;
+}
+
+input[type="submit"] {
+  border-style: none;
+  background-color: #4d7f9c;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 25px 20px rgb(167, 166, 166);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+input[type="submit"]:hover {
+  background-color: #395467;
+}
+
+input[type="submit"]:active {
+  background-color: #253843;
+  box-shadow: 0px 10px 8px rgb(129, 129, 129);
+  transform: translateY(10px);
+}
+
+.errorInput {
+  border-bottom: 1px solid red;
+  background-color: #aa35351e;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.stepTwo {
+  background-color: white;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0px 25px 20px rgb(167, 166, 166);
+}
+
+.stepTwo p {
+  padding: 20px;
+  color: #4d7f9c;
+}
+
+.stepTwo span {
+  font-weight: 700;
+  color: #000;
+}
+
+.stepTwo button {
+  padding: 20px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  background-color: #4d7f9c;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.stepTwo button:hover {
+  background-color: #395467;
+}
+.stepTwo button:active {
+  background-color: #253843;
 }
